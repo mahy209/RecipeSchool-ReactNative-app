@@ -1,22 +1,24 @@
 const loginBackground = require("../assets/login.jpg")
 
-const recipe = require("../assets/food data/salad.png")
-const spagetti = require("../assets/pasta shrimp.jpg")
+const recipe = require("../assets/salad.png")
+const pasta = require("../assets/pastashrimp.jpg")
+const greekSalad = require("../assets/greeksalad.jpg")
 const chickenBBQ = require("../assets/chicken.jpg")
 const laksa = require("../assets/laksa.png")
 
-const profile = require("../assets/avatars/ava (3).png")
-const UserProfile1 = require("../assets/avatars/ava (1).png")
-const UserProfile2 = require("../assets/avatars/ava (2).png")
-const UserProfile3 = require("../assets/avatars/ava (4).png")
-const UserProfile4 = require("../assets/avatars/ava.png")
-const UserProfile5 = require("../assets/avatars/ava (3).png")
+const profile = require("../assets/avatars/avaaa.png")
+const UserProfile1 = require("../assets/avatars/ava.png")
+const UserProfile2 = require("../assets/avatars/avaa.png")
+const UserProfile3 = require("../assets/avatars/avaaaa.png")
+const UserProfile4 = require("../assets/avatars/avaaaaa.png")
+const UserProfile5 = require("../assets/avatars/avaaa.png")
 
 export default {
     loginBackground,
     profile,
     recipe,
-    spagetti,
+    pasta,
+    greekSalad,
     chickenBBQ,
     laksa,
 

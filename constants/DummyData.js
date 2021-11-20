@@ -4,8 +4,8 @@ import icons from "./icons"
 const trendingRecipes = [
     {
         id: 1,
-        name: "Spaghetti With Shrimp Sauce",
-        image: images.spagetti,
+        name: "Pasta With Shrimp Sauce",
+        image: images.pasta,
         duration: "30 mins",
         serving: 3,
         isBookmark: true,
@@ -114,6 +114,80 @@ const trendingRecipes = [
                 icon: icons.coriander,
                 description: "Coriander",
                 quantity: "1 tsp"
+            },
+
+        ],
+        viewers: [
+            {
+                id: 1,
+                profilePic: images.UserProfile5
+            },
+            {
+                id: 2,
+                profilePic: images.UserProfile4
+            },
+            {
+                id: 3,
+                profilePic: images.UserProfile1
+            },
+            {
+                id: 4,
+                profilePic: images.UserProfile2
+            },
+            {
+                id: 5,
+                profilePic: images.UserProfile3
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: "Greek Salad",
+        image: images.greekSalad,
+        duration: "20 mins",
+        serving: 1,
+        isBookmark: false,
+        category: "salad",
+        author: {
+            profilePic: images.UserProfile2,
+            name: "omar ali",
+        },
+        ingredients: [
+            {
+                id: 1,
+                icon: icons.tomato,
+                description: "tomato",
+                quantity: "4 pcs"
+            },
+            {
+                id: 2,
+                icon: icons.lemongrass,
+                description: "Lemongrass stalk",
+                quantity: "1 stalk"
+            },
+            {
+                id: 3,
+                icon: icons.onion,
+                description: "Large Onion",
+                quantity: "1"
+            },
+            {
+                id: 4,
+                icon: icons.garlic,
+                description: "Garlic cloves",
+                quantity: "5"
+            },
+            {
+                id: 5,
+                icon: icons.coriander,
+                description: "Coriander",
+                quantity: "1 tsp"
+            },
+            {
+                id: 6,
+                icon: icons.oliver,
+                description: "oliver oil",
+                quantity: "3 tps"
             },
 
         ],
