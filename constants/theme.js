@@ -18,7 +18,7 @@ export const COLORS = {
     transparentBlack7: 'rgba(2, 2, 2, 0.7)',
     transparentBlack9: 'rgba(2, 2, 2, 0.9)',
 
-    transparentGray: 'rgba(150,148,148)',
+    transparentGray: 'rgba(24, 24, 32, 0.5)',
     transparentDarkGray: 'rgba(20,20,20, 0.9)',
 
     transparent: 'transparent',
@@ -27,8 +27,8 @@ export const SIZES = {
     // global sizes
     base: 8,
     font: 16,
-    radius: 10,
-    padding: 24,
+    radius: 15,
+    padding: 30,
 
     // font sizes
     largeTitle: 36,

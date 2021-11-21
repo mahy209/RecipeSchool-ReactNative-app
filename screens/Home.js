@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import {View,Text,TouchableOpacity, Image, SafeAreaView, TextInput, FlatList, ColorPropType} from 'react-native';
-import { CategoryCard } from '../components';
+import { CategoryCard, TrendingCard } from '../components';
 
 import {COLORS, SIZES, FONTS, images, icons, dummyData} from '../constants'
 
@@ -50,8 +50,32 @@ const Home = ({ navigation }) => {
 
     function renderTrendingSection(){
         return(
-            <View>
-                
+            <View style={{marginTop: SIZES.padding }}>
+                <Text style={{marginHorizontal: SIZES.padding, ...FONTS.h2, fontWeight: "bold"}}>Trending Recipes</Text>
+                <FlatList data={dummyData.trendingRecipes} 
+                horizontal showsHorizontalScrollIndicator={false}
+                keyExtractor={item => `${item.id}`}
+                renderItem={({item, index}) => {
+                    return(
+                        <TrendingCard containerStyle={{marginLeft: index == 0 ? SIZES.padding: 0}} 
+                        recipeItem={item}
+                            onPress={() => navigation.navigate("Recipe", { recipe: item})}/>
+                    )
+                }}
+                />
+            </View>
+        )
+    }
+
+    function renderCategoryHeader(){
+        return(
+            <View style={{flexDirection: "row", alignItems: "center", marginTop: 20, marginHorizontal: SIZES.padding, }}>
+            {/* title */}
+            <Text style={{flex:1, ...FONTS.h2, fontWeight: "bold" }}>Categories</Text>
+            {/* view all */}
+            <TouchableOpacity>
+                <Text style={{color: COLORS.gray, ...FONTS.body4, }}>View All</Text>
+            </TouchableOpacity>
             </View>
         )
     }
@@ -74,7 +98,9 @@ const Home = ({ navigation }) => {
 
                 {/*trending section*/}
                 {renderTrendingSection()}
+
                 {/*Category Header*/}
+                {renderCategoryHeader()}
             </View>
         }
         renderItem= {({item}) =>{
