@@ -7,7 +7,7 @@ Recipe school is a react native app for recipes with expo cli, enjoy it and have
 - Expo CLI
 - React Native
 - React Native Navigation
-- API from Edamam
+- React Native Animation
 - Javascript and JSX
 
 ## Getting Started
